@@ -20,13 +20,13 @@ def insertionSort(arr):
 #Without Swapping.About 2x Faster than previous.This is shifting
 def insertionSort2(arr):
 	print("Original List : " + str(arr))
-	for i in range(1,len(arr)):
-		curr=arr[i]
-		for j in range(i-1,0,-1):
-			if curr < arr[j]:
-				arr[j+1] = arr[j]
-			arr[j]=curr
-			
+	for i in range(1, len(arr)):
+		key = arr[i]
+		j = i-1
+		while j >=0 and key < arr[j] :
+			arr[j+1] = arr[j]
+			j -= 1
+		arr[j+1] = key
 	print("Sorted List : " + str(arr))
 
 insertionSort(arr)
