@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 #Implementing Selection Sort in python
-#Run Time Complexity:Best-O(n)
-#Run Time Complexity:Average-O(n)
-#Run Time Complexity:Worst-O(n)
-#Space Complexity-O(1)
+#Run Time Complexity:Best-O(n+k)
+#Run Time Complexity:Average-O(n+k)
+#Run Time Complexity:Worst-O(n+k)
+#Space Complexity-O(n+k)
 #Only apply for small integers when frequency of integers is more thatn integers
 
 arr=[8,1,2,3,6,4,3,9]
